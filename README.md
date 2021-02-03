@@ -10,19 +10,19 @@ your source or scene name then I can't help you.
 
 ## Supported commands:
 
-**Set Current Scene** /Scene/SceneName  
-*example* /Scene/Intro  
+**Set Current Scene** /Scene SceneName (string)  
+*example* /Scene Intro  
   
-**Set Filter Visibility** (enable/disable filters) /FilterVisibility/SourceName/FilterName/(true,false)  
-*example* /FilterVisibility/Camera/Blur/true  
+**Set Filter Visibility** (enable/disable filters) /FilterVisibility/SourceName/FilterName/ 0,1 (int 0=disable 1=enable)  
+*example* /FilterVisibility/Camera/Blur 0
   
-**Opacity** (add a color correction filter to the source you want to control.) /Opacity/SourceName (Value as int 0-100)  
+**Opacity** (add a color correction filter to the source you want to control.) /Opacity/SourceName (int 0-100)  
 *example* /Opacity/Camera 50   
   
-**Set Source Visibility** /SourceVisibility/SceneName/Source/(true,false)  
-*example* /SourceVisibility/Intro/Graphic1/false  
+**Set Source Visibility** /SourceVisibility/SceneName/Source 0,1 (int 0=disable 1=enable)  
+*example* /SourceVisibility/Intro/Graphic1 1
   
-**Volume** /Volume/SourceName (Value as float in dB -100-20 NOTE:OBS mixer only has a range of -60-0dB however OBS supports larger values.)  
+**Volume** /Volume/SourceName (float in dB -100-20 NOTE:OBS mixer only has a range of -60-0dB however OBS supports larger values. Anything below -100 will be -inf)  
 *example* /Volume/mic -10  
 
 **Set Source Position X axis** /SetSourcePositionX/SceneName/Source/Name/ (X postion as int)   
@@ -45,6 +45,7 @@ your source or scene name then I can't help you.
 
 **Disable Studio Mode** /DisableStudioMode  
 *example* /DisableStudioMode  
+  
 **Transition from preview** /TransitionTake  
 *example* /TransitionTake  
 
