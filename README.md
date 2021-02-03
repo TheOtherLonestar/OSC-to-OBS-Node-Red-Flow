@@ -2,11 +2,13 @@
 A Node-Red Flow that enables the use of OSC commands to control OBS. 
 
 Set the IP address and port you use in the Websocket Node. Set the port you want to use to receive OSC commands (Default 4555).
+Any spaces in scene names, filter names, source names, etc can be replaced with an \*. For example if you want to switch to 
+a scene named "Scene 1" the command would be /Scene/Scene\*1
 
 ## Supported commands:
 
-**Set Current Scene** /Scene/SceneName  
-**Set Filter Visibility** (enable/disable filters) /FilterVisibility/SourceName/FilterName/(true,false)\n  
+**Set Current Scene** /Scene/SceneName *example* /Scene/Intro  
+**Set Filter Visibility** (enable/disable filters) /FilterVisibility/SourceName/FilterName/(true,false)\n *example* /FilterVisibility/Camera/Blur/true  
 **Opacity** (add a color correction filter to the source you want to control) /Opacity/SourceName (Value as int 0-100)  
 **Set Source Visibility** /SourceVisibility/SceneName/Source/(true,false)  
 **Volume** /Volume/SourceName (Value as float 0-1)  
