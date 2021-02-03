@@ -20,7 +20,7 @@ your source or scene name then I can't help you.
 *example* /Opacity/Camera 50   
   
 **Set Source Visibility** /SourceVisibility/SceneName/Source 0,1 (int 0=disable 1=enable)  
-*example* /SourceVisibility/Intro/Graphic1 1
+*example* /SourceVisibility/Intro/Graphic 1
   
 **Volume** /Volume/SourceName (float in dB -100-20 NOTE:OBS mixer only has a range of -60-0dB however OBS supports larger values. Anything below -100 will be -inf)  
 *example* /Volume/mic -10  
