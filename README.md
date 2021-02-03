@@ -7,12 +7,22 @@ a scene named "Scene 1" the command would be /Scene/Scene\*1
 
 ## Supported commands:
 
-**Set Current Scene** /Scene/SceneName *example* /Scene/Intro  
-**Set Filter Visibility** (enable/disable filters) /FilterVisibility/SourceName/FilterName/(true,false)\n *example* /FilterVisibility/Camera/Blur/true  
-**Opacity** (add a color correction filter to the source you want to control) /Opacity/SourceName (Value as int 0-100)  
+**Set Current Scene** /Scene/SceneName  
+*example* /Scene/Intro  
+  
+**Set Filter Visibility** (enable/disable filters) /FilterVisibility/SourceName/FilterName/(true,false)  
+*example* /FilterVisibility/Camera/Blur/true  
+  
+**Opacity** (add a color correction filter to the source you want to control.) /Opacity/SourceName (Value as int 0-100)  
+*example* /Opacity/Camera 50   
+  
 **Set Source Visibility** /SourceVisibility/SceneName/Source/(true,false)  
-**Volume** /Volume/SourceName (Value as float 0-1)  
+*example* /SourceVisibility/Intro/Graphic1/false  
+  
+**Volume** /Volume/SourceName (Value as float in dB -100-20 NOTE:OBS mixer only has a range of -60-0dB however OBS supports larger values.)  
+*example* /Volume/mic -10  
 **Set Source Position X axis** /SetSourcePositionX/SceneName/Source/Name/ (X postion as int)   
+*example* /SetSourcePositonX/MainCamera/name
 **Set Source Position Y axis** /SetSourcePositionY/SceneName/Source/Name/ (Y postion as int)   
 **Set Source Scale** /SetSourceScale/SceneName/SourceName (Value as float 1=100 percent scale)  
 **Set Preview Scene** /ScenePreview/SceneName  
