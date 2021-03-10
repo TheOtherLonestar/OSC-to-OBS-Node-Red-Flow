@@ -25,13 +25,13 @@ your source or scene name then I can't help you.
 **Volume** /Volume/SourceName (float in dB -100-20 NOTE:OBS mixer only has a range of -60-0dB however OBS supports larger values. Anything below -100 will be -inf)  
 *example* /Volume/mic -10  
 
-**Set Source Position of both X and Y axis** /SetSourcePosition/SceneName/Source/Name/ (X postion as int) (Y position as int)   
+**Set Source Position of both X and Y axis** /SetSourcePosition/SceneName/SourceName/ (X postion as int) (Y position as int)   
 *example* /SetSourcePositon/MainCamera  640 540
 
-**Set Source Position X axis** /SetSourcePositionX/SceneName/Source/Name/ (X postion as int)   
+**Set Source Position X axis** /SetSourcePositionX/SceneName/SourceName/ (X postion as int)   
 *example* /SetSourcePositonX/MainCamera  640
 
-**Set Source Position Y axis** /SetSourcePositionY/SceneName/Source/Name/ (Y postion as int)   
+**Set Source Position Y axis** /SetSourcePositionY/SceneName/SourceName/ (Y postion as int)   
 *example* /SetSourcePostionY/Maincamera 520  
 
 **Set Source Scale** /SetSourceScale/SceneName/SourceName (Value as float 1=100 percent scale)  
